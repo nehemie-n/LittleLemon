@@ -19,3 +19,5 @@ admin:
 	python manage.py createsuperuser
 
 
+db:
+	python manage.py dbshell
