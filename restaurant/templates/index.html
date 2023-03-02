@@ -35,18 +35,21 @@
       rel="stylesheet"
     />
   </head>
-  <header>
-    <img src="{% static 'img/logo.png' %}" />
-  </header>
-  <nav>
-    <ul>
-      <li><a href="{% url 'home' %}">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Book</a></li>
-    </ul>
-  </nav>
   <body>
+    <div>
+      <img src="{% static 'restaurant/littlelemon.png' %}">
+    </div>
+    <header>
+      <img src="{% static 'img/logo.png' %}" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Book</a></li>
+      </ul>
+    </nav>
     <section>
       <article id="hero">
         <h1 class="heading_shadow">SPECIAL OFFER</h1>
