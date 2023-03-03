@@ -7,6 +7,6 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("bookings", BookingView.as_view(), name="menu"),
     path("users", UserViewSet.as_view(), name="menu"),
-    path("menu/", MenuItemView.as_view(), name="menu"),
+    path("menu", MenuItemView.as_view(), name="menu"),
     path("menu/<int:pk>", SingleMenuItemView.as_view(), name="menu"),
 ]
