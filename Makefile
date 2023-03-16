@@ -15,6 +15,9 @@ migrations:
 shell:
 	python manage.py shell
 
+test:
+	python manage.py test restaurant.tests
+
 admin:
 	python manage.py createsuperuser
 
