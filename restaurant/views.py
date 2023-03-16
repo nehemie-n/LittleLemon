@@ -37,14 +37,14 @@ class BookingView(generics.ListCreateAPIView):
 class UserViewSet(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
 # Menu Items
 class MenuItemView(generics.ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
 
 
 class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
