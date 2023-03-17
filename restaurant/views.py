@@ -4,7 +4,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework import generics
 from .models import Booking, Menu
 from .serializers import BookingSerializer, MenuSerializer, UserSerializer
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from django.contrib.auth.models import User
 
 
@@ -37,7 +37,7 @@ class BookingView(generics.ListCreateAPIView):
 class UserViewSet(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    # permission_classes = [IsAuthenticated]
+    permission_classes = []
 
 
 # Menu Items
