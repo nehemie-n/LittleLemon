@@ -11,7 +11,7 @@ Below are the API endpoints or paths that you can use to test out the APP
 * `/auth/users/me` [GET] (requires authentication)
 * `/auth/token/login` [POST] (login, username & password)
 * `/auth/token/logout` (logout)
-* `/auth/** other routes from djoser such as reset password, activate, e.t.c
+* `/auth/**` other routes from djoser such as reset password, activate, e.t.c
 
 <br>
 
